@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>I CHOOSE DATABASE ADMINISTER</pattern>
+        <template>Exellent choice! Database Administrators are in high demand.
+        
+        Here is more what you'll need: 
+        <a href="https://www.indeed.com/career-advice/career-development/how-to-become-database-administrator">
+        Link
+        </a>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>I CHOOSE *DATABASE* ADMINISTER</pattern>
+        <template>Exellent choice! Database Administrators are in high demand.
+        
+        Here is more what you'll need: 
+        <a href="https://www.indeed.com/career-advice/career-development/how-to-become-database-administrator">
+        Link
+        </a>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>I WANT MORE INFO ON NETWORK</pattern>
+        <template>Network Engineers build and secure networks for organizations. 
+        To explore further, check out this resource</template>
+    </category>
+
+</aiml>
