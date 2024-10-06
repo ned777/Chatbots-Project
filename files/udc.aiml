@@ -1,31 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version = "1.0" encoding = "UTF-8"?>
 <aiml>
-    <category>
-        <pattern>I CHOOSE DATABASE ADMINISTER</pattern>
-        <template>Exellent choice! Database Administrators are in high demand.
-        
-        Here is more what you'll need: 
-        <a href="https://www.indeed.com/career-advice/career-development/how-to-become-database-administrator">
-        Link
-        </a>
-        </template>
-    </category>
     
-        <category>
-        <pattern>I CHOOSE *DATABASE* ADMINISTER</pattern>
-        <template>Exellent choice! Database Administrators are in high demand.
-        
-        Here is more what you'll need: 
-        <a href="https://www.indeed.com/career-advice/career-development/how-to-become-database-administrator">
-        Link
-        </a>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>I WANT MORE INFO ON NETWORK</pattern>
-        <template>Network Engineers build and secure networks for organizations. 
-        To explore further, check out this resource</template>
+   <category>
+      <pattern>*</pattern>
+      <template>
+      I don't have an answer for that. Please type "hi" to start.
+      </template>
+   </category>
+   
+   <category>
+    <pattern>HI</pattern>
+    <template>
+         Hey there! My name is Kortana, your career advisory chatbot. 
+         Would you like some help selecting a career in computing?
+         <button>
+             <text>Sure!</text>
+             <postback>QUIZ</postback>
+         </button>
+         <button>
+             <text>Not right now.</text>
+             <postback>EXIT</postback>
+         </button>
+    </template>
     </category>
 
+    <category>
+    <pattern>EXIT</pattern>
+    <template>
+         No problem! If you change your mind, type “hi” to try again. 
+    </template>
+    </category>
+   
 </aiml>
