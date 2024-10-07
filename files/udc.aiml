@@ -2,33 +2,86 @@
 <aiml>
     
    <category>
-      <pattern>*</pattern>
-      <template>
-      I don't have an answer for that. Please type "hi" to start.
-      </template>
+        <pattern>*</pattern>
+        <template>
+        I don't have an answer for that. Please type "hi" to start.
+        </template>
    </category>
    
    <category>
-    <pattern>HI</pattern>
-    <template>
-         Hey there! My name is Kortana, your career advisory chatbot. 
-         Would you like some help selecting a career in computing?
+        <pattern>HI</pattern>
+        <template>
+            Hey there! My name is Kortana, your career advisory chatbot. 
+            Would you like some help selecting a career in computing?
          <button>
              <text>Sure!</text>
-             <postback>QUIZ</postback>
+             <postback>ASK DATABASE</postback>
          </button>
          <button>
              <text>Not right now.</text>
              <postback>EXIT</postback>
          </button>
-    </template>
+        </template>
     </category>
 
     <category>
-    <pattern>EXIT</pattern>
-    <template>
-         No problem! If you change your mind, type “hi” to try again. 
-    </template>
+        <pattern>EXIT</pattern>
+        <template>
+            No problem! If you change your mind, type “hi” to try again. 
+        </template>
     </category>
+    
+    <category>
+        <pattern>ASK DATABASE</pattern>
+        <template>
+            Are you interested in database?
+            <button>
+                <text>SURE!</text>
+                <postback>RECOMMEND DATABASE</postback>
+            </button>
+		    <button>
+			    <text>No</text>
+			    <postback>ASK NETWORK</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>RECOMMEND DATABASE</pattern>
+        <template>
+            My best advise is to pursue in Database Administrator!
+            <button>
+                <text>Sure!</text>
+                <postback>No</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>ASK NETWORK</pattern>
+        <template>
+            Are you interested in network?
+            <button>
+                <text>Sure!</text>
+                <postback>RECOMMEND NETWORK</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>ASK SYSADMIN</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>RECOMMEND NETWORK</pattern>
+        <template>
+            My best advice is to pursue in Network Administrator!
+            Click this <a href="https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm">link</a> for more info. </template>
+    </category>
+
+
+
+
+    
    
 </aiml>
