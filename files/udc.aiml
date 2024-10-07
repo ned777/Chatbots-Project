@@ -58,10 +58,79 @@
             </button>
             <button>
                 <text>No</text>
-                <postback>ASK SYSADMIN</postback>
+                <postback>ASK IT</postback>
             </button>
         </template>
     </category>
+
+    <category>
+        <pattern>ASK IT</pattern>
+        <template>
+            Are you interested in IT?
+            <button>
+                <text>Sure!</text>
+                <postback>ASK MAINTAINING AND CONFIGURING</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>ASK CODING</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ASK MAINTAINING AND CONFIGURING</pattern>
+        <template>
+            Are you interested in maintaining and configuring?
+            <button>
+                <text>Sure!</text>
+                <postback>RECOMMEND SYSTEM ADMIN</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>ASK TROUBLESHOOTING</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ASK CODING</pattern>
+        <template>
+            Are you interested in coding?
+            <button>
+                <text>Sure!</text>
+                <postback>RECOMMEND SOFTWARE DEVELOPER</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>NO MORE RECOMMENDATION</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ASK TROUBLESHOOTING</pattern>
+        <template>
+            Are you interested in troubleshooting?
+            <button>
+                <text>Sure!</text>
+                <postback>RECOMMEND IT Support Specialist</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>ASK CODING</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO MORE RECOMMENDATION</pattern>
+        <template>
+            I have no more recommendation. 
+            Don't give up! Visit <a href="nasa.gov">NASA.gov</a> to become an astronaut!
+        </template>
+    </category>
+    
 
 <!--Recommending career-->
 
@@ -87,6 +156,40 @@
         </template>
     </category>
 
+    <category>
+        <pattern>RECOMMEND SYSTEM ADMIN</pattern>
+        <template>
+            My best advice is to pursue in System Administrator!
+            <button>
+                <text>Click for more info</text>
+                <postback>Link to System Admin</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>RECOMMEND SOFTWARE DEVELOPER</pattern>
+        <template>
+            My best advice is to pursue in software-developer!
+            <button>
+                <text>Click for more info</text>
+                <postback>Link to Software Developer</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>RECOMMEND IT Support Specialist</pattern>
+        <template>
+            My best advice is to pursue in IT Support Specialist!
+            <button>
+                <text>Click for more info</text>
+                <postback>Link to IT Support Specialist</postback>
+            </button>
+        </template>
+    </category>
+
+
 <!--Provide link for more info-->
 
     <category>
@@ -105,7 +208,28 @@
         </template>
     </category>
 
-
+    <category>
+        <pattern>Link to System Admin</pattern>
+        <template>
+                 Click this 
+                <a href="https://www.ibm.com/docs/en/zos-basic-skills?topic=world-who-is-system-administrator">link</a> for more info.
+        </template>
+    </category>
     
+    <category>
+        <pattern>Link to Software Developer</pattern>
+        <template>
+                 Click this 
+                <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm#:~:text=Software%20developers%20create%20the%20computer,learn%20how%20the%20software%20works.">link</a> for more info.
+        </template>
+    </category>
+
+    <category>
+        <pattern>Link to Software Developer</pattern>
+        <template>
+                 Click this 
+                <a href="https://www.comptia.org/content/it-careers-path-roadmap/it-support-specialist">link</a> for more info.
+        </template>
+    </category>
    
 </aiml>
