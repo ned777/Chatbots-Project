@@ -30,7 +30,9 @@
             No problem! If you change your mind, type “hi” to try again. 
         </template>
     </category>
-    
+
+<!--Asking question--> 
+
     <category>
         <pattern>ASK DATABASE</pattern>
         <template>
@@ -42,17 +44,6 @@
 		    <button>
 			    <text>No</text>
 			    <postback>ASK NETWORK</postback>
-            </button>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>RECOMMEND DATABASE</pattern>
-        <template>
-            My best advise is to pursue in Database Administrator!
-            <button>
-                <text>Sure!</text>
-                <postback>No</postback>
             </button>
         </template>
     </category>
@@ -72,14 +63,47 @@
         </template>
     </category>
 
+<!--Recommending career-->
+
+    <category>
+        <pattern>RECOMMEND DATABASE</pattern>
+        <template>
+            My best advise is to pursue in Database Administrator!
+            <button>
+                <text>Click for more info</text>
+                <postback>Link to Database Admin</postback>
+            </button>
+        </template>
+    </category>
+
     <category>
         <pattern>RECOMMEND NETWORK</pattern>
         <template>
             My best advice is to pursue in Network Administrator!
-            Click this <a href="https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm">link</a> for more info. </template>
+            <button>
+                <text>Click for more info</text>
+                <postback>Link to Network Admin</postback>
+            </button>
+        </template>
     </category>
 
+<!--Provide link for more info-->
 
+    <category>
+        <pattern>Link to Database Admin</pattern>
+        <template>
+                 Click this 
+                <a href="https://www.oracle.com/database/what-is-a-dba/#:~:text=A%20database%20administrator%2C%20or%20DBA,is%20correctly%20stored%20and%20retrieved.">link</a> for more info.
+        </template>
+    </category>
+
+    <category>
+        <pattern>Link to Network Admin</pattern>
+        <template>
+                 Click this 
+                <a href="https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm">link</a> for more info.
+        </template>
+    </category>
 
 
     
